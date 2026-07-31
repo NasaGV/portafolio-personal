@@ -1,0 +1,141 @@
+/* Variables de identidad visual */
+:root {
+  --color-primary: #1d4ed8;      /* azul principal */
+  --color-primary-dark: #1e3a8a;
+  --color-accent: #f97316;       /* naranja complementario */
+  --color-dark: #0f172a;
+  --color-light-bg: #f4f6fb;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --shadow-soft: 0 10px 25px rgba(29, 78, 216, 0.15);
+  --shadow-hover: 0 16px 35px rgba(29, 78, 216, 0.25);
+  --transition-base: all 0.3s ease;s
+}
+
+body {
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: var(--font-heading);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-dark);
+}
+
+.brand-dot,
+.navbar-brand {
+  color: var(--color-accent);
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  padding-top: 5rem;
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-primary-dark) 100%);
+  color: #ffffff;
+}
+
+.hero-eyebrow {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 40rem;
+}
+
+.hero img {
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-base);
+}
+
+.hero img:hover {
+  transform: scale(1.03);
+}
+
+/* Secciones */
+.section-padding {
+  padding: 4.5rem 0;
+}
+
+h2 {
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+}
+
+/* Cards de proyectos */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-img-top {
+  height: 190px;
+  object-fit: cover;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* Badges */
+.badge.text-bg-primary {
+  background-color: var(--color-primary);
+}
+
+.badge.text-bg-secondary {
+  background-color: var(--color-accent);
+}
+
+/* Footer */
+footer a:hover {
+  color: var(--color-accent);
+  transition: var(--transition-base);
+}
+
+/* Responsive fino */
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
