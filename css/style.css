@@ -9,7 +9,7 @@
   --font-body: 'Inter', sans-serif;
   --shadow-soft: 0 10px 25px rgba(29, 78, 216, 0.15);
   --shadow-hover: 0 16px 35px rgba(29, 78, 216, 0.25);
-  --transition-base: all 0.3s ease;s
+  --transition-base: all 0.3s ease;
 }
 
 body {
